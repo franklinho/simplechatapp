@@ -8,12 +8,12 @@ import com.parse.ParseObject;
  */
 @ParseClassName("Message")
 public class Message extends ParseObject {
-    public static String getUserId() {
-        return USER_ID_KEY;
+    public String getUserId() {
+        return getString(USER_ID_KEY);
     }
 
-    public static String getBody() {
-        return BODY_KEY;
+    public String getBody() {
+        return getString(BODY_KEY);
     }
 
     public static final String USER_ID_KEY = "userId";

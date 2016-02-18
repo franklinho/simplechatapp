@@ -39,7 +39,8 @@ public class ChatActivity extends AppCompatActivity {
             refreshMessages();
             mHandler.postDelayed(this, POLL_INTERVAL);
         }
-    }
+    };
+
 
     EditText etMessage;
     Button btSend;
